@@ -23,7 +23,7 @@ all the other parameters are detailed in Functest user guide.
 
 ## onap.properties
 
-This file includes all the ONAP end points. It is built at ONAP installation and can be found on the ONAM Robot VM.
+This file includes all the ONAP end points. It is built at ONAP installation and can be found on the ONAP Robot VM.
 
 # Launch xtesting-onap-robot
 
