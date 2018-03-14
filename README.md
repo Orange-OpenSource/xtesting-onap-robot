@@ -32,7 +32,9 @@ You can run the test with the following command:
 sudo docker run --env-file <your env> -v <your onap properties>:/share/config/integration_vm_properties.py colvert22/functest-onap:latest
 
 By default it will execute all the tests corresponding to the command bash -c 'run_tests -t all'
+
 If you want to execute only a subset of the tests you may precise the test cases using -t: bash -c 'run_tests -t dcae'
+
 If you want to push the results to the database, you can use the -r option:  bash -c 'run_tests -t all -r'
 
 # References
