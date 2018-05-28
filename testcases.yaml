@@ -11,7 +11,7 @@ tiers:
                 case_name: robot_healthcheck
                 project_name: functest
                 criteria: 100
-                blocking: true
+                blocking: false
                 description: >-
                     This test case verifies the basic ONAP API: appc, sdnc,so,
                     vid, ....based on the default robot tests
