@@ -28,7 +28,7 @@ tiers:
                             - core
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
 
             -
@@ -52,7 +52,7 @@ tiers:
                             - api
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
 
             -
@@ -76,7 +76,7 @@ tiers:
                             - dcae
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
             -
                 case_name: robot_multicloud
@@ -99,7 +99,7 @@ tiers:
                             - multicloud
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
             -
                 case_name: robot_3rdparty
@@ -123,5 +123,5 @@ tiers:
                             - 3rdparty
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
