@@ -14,10 +14,7 @@ tiers:
                 blocking: false
                 description: >-
                     This test case verifies the basic ONAP API: appc, sdnc,so,
-                    vid, ....based on the default robot tests
-                dependencies:
-                    installer: ''
-                    scenario: ''
+                    vid, ...based on the default robot tests
                 run:
                     module: 'xtesting.core.robotframework'
                     class: 'RobotFramework'
@@ -39,9 +36,6 @@ tiers:
                 description: >-
                     This test case verifies DCAE api
                     based on the default robot tests
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
                     module: 'xtesting.core.robotframework'
                     class: 'RobotFramework'
@@ -63,9 +57,6 @@ tiers:
                 description: >-
                     This test case verifies DCAE api
                     based on the default robot tests
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
                     module: 'xtesting.core.robotframework'
                     class: 'RobotFramework'
@@ -86,9 +77,6 @@ tiers:
                 description: >-
                     This test case verifies the multicloud features of ONAP
                     based on the default robot tests
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
                     module: 'xtesting.core.robotframework'
                     class: 'RobotFramework'
@@ -110,9 +98,6 @@ tiers:
                     This test case verifies the ONAP 3rd party API
                     especially the different drivers
                     based on the default robot tests
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
                     module: 'xtesting.core.robotframework'
                     class: 'RobotFramework'
