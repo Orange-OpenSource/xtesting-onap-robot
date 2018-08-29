@@ -2,7 +2,7 @@ FROM opnfv/xtesting
 
 ARG OPENSTACK_TAG=stable/pike
 ARG OPNFV_TAG=master
-ARG ONAP_TAG=master
+ARG ONAP_TAG=beijing
 
 ENV PYTHONPATH $PYTHONPATH:/src/testing-utils/eteutils
 
