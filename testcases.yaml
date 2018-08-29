@@ -105,3 +105,57 @@ tiers:
                             - '/share/config/integration_robot_properties.py'
                             - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
+            -
+                case_name: robot_fw_dist
+                project_name: functest
+                criteria: 100
+                blocking: false
+                description: >-
+                    This test case verifies that vFW can be successfully distributed
+                run:
+                    name: 'robotframework'
+                    args:
+                        suites:
+                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                        include:
+                            - healthdist
+                        variablefile:
+                            - '/share/config/integration_robot_properties.py'
+                            - '/share/config/vm_properties.py'
+                            - '/share/config/integration_preload_parameters.py'
+            -
+                case_name: robot_portal_login
+                project_name: functest
+                criteria: 100
+                blocking: false
+                description: >-
+                    This test case verifies that it is possible to log to portal
+                run:
+                    name: 'robotframework'
+                    args:
+                        suites:
+                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                        include:
+                            - healthlogin
+                        variablefile:
+                            - '/share/config/integration_robot_properties.py'
+                            - '/share/config/vm_properties.py'
+                            - '/share/config/integration_preload_parameters.py'
+            -
+                case_name: robot_portal_app_access
+                project_name: functest
+                criteria: 100
+                blocking: false
+                description: >-
+                    This test case verifies portal applucation access tests
+                run:
+                    name: 'robotframework'
+                    args:
+                        suites:
+                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                        include:
+                            - healthportalapp
+                        variablefile:
+                            - '/share/config/integration_robot_properties.py'
+                            - '/share/config/vm_properties.py'
+                            - '/share/config/integration_preload_parameters.py'
