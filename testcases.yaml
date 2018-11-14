@@ -8,7 +8,7 @@ tiers:
             Set of basic Functional tests to validate the ONAP installation.
         testcases:
             -
-                case_name: robot_core
+                case_name: core
                 project_name: functest
                 criteria: 100
                 blocking: false
@@ -32,7 +32,7 @@ tiers:
                             - '/share/config/integration_preload_parameters.py'
 
             -
-                case_name: robot_small
+                case_name: small
                 project_name: functest
                 criteria: 100
                 blocking: false
@@ -57,7 +57,7 @@ tiers:
                             - '/share/config/integration_preload_parameters.py'
 
             -
-                case_name: robot_medium
+                case_name: medium
                 project_name: functest
                 criteria: 100
                 blocking: false
@@ -82,7 +82,7 @@ tiers:
                             - '/share/config/integration_vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
             -
-                case_name: robot_full
+                case_name: full
                 project_name: functest
                 criteria: 100
                 blocking: false
