@@ -15,12 +15,8 @@ tiers:
                 description: >-
                     This test case verifies the API of core ONAP components
                     aai, dmap, portal, sdc, sdnc, so, robot
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
-                    module: 'xtesting.core.robotframework'
-                    class: 'RobotFramework'
+                    name: 'robotframework'
                     args:
                         suites:
                             - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
@@ -39,12 +35,8 @@ tiers:
                 description: >-
                     This test case verifies the API of the components
                     AAF, APPC, CLI, COnsul, ESR, Log, MSB, Multicloud, NBI, VID
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
-                    module: 'xtesting.core.robotframework'
-                    class: 'RobotFramework'
+                    name: 'robotframework'
                     args:
                         suites:
                             - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
@@ -64,12 +56,8 @@ tiers:
                 description: >-
                     This test case verifies the API of the components
                     CLAMP, DCAE, OOF, POLICY, UUI, SNIRO
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
-                    module: 'xtesting.core.robotframework'
-                    class: 'RobotFramework'
+                    name: 'robotframework'
                     args:
                         suites:
                             - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
@@ -89,12 +77,8 @@ tiers:
                 description: >-
                     This test case verifies all the healthcheck Robot tests
                     based on the default robot tests
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
-                    module: 'xtesting.core.robotframework'
-                    class: 'RobotFramework'
+                    name: 'robotframework'
                     args:
                         suites:
                             - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
