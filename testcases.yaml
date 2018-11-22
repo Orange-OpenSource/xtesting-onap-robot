@@ -24,7 +24,7 @@ tiers:
                             - core
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
 
             -
@@ -46,7 +46,7 @@ tiers:
                             - small
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
 
             -
@@ -70,7 +70,7 @@ tiers:
                             - medium
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
             -
                 case_name: full
@@ -89,5 +89,5 @@ tiers:
                             - health
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
