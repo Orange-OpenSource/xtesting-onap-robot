@@ -3,6 +3,7 @@ FROM opnfv/xtesting
 ARG OPENSTACK_TAG=master
 ARG OPNFV_TAG=master
 ARG ONAP_TAG=casablanca
+ARG PIP_TAG=18.0
 
 ENV PYTHONPATH $PYTHONPATH:/src/testing-utils/eteutils
 
@@ -15,7 +16,8 @@ RUN apk --no-cache add --virtual .build-deps --update \
     git clone --depth 1 https://git.onap.org/testsuite/python-testing-utils -b $ONAP_TAG /src/testing-utils && \
     pip install \
         -chttps://git.openstack.org/cgit/openstack/requirements/plain/upper-constraints.txt?h=$OPENSTACK_TAG \
-        -chttps://git.opnfv.org/functest/plain/upper-constraints.txt?h=$OPNFV_TAG \
+        pip==$PIP_TAG && \
+    pip install -chttps://git.opnfv.org/functest/plain/upper-constraints.txt?h=$OPNFV_TAG \
         -rthirdparty-requirements.txt \
         -e /src/testing-utils && \
     rm -r thirdparty-requirements.txt /src/testing-utils/.git /share/config/.git \
