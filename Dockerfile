@@ -1,6 +1,6 @@
 FROM opnfv/xtesting
 
-ARG OPENSTACK_TAG=stable/pike
+ARG OPENSTACK_TAG=master
 ARG OPNFV_TAG=master
 ARG ONAP_TAG=master
 
