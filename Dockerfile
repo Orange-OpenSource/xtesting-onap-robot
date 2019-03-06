@@ -6,6 +6,7 @@ ARG ONAP_TAG=casablanca
 ARG PIP_TAG=18.0
 
 ENV PYTHONPATH $PYTHONPATH:/src/testing-utils/eteutils
+ENV TAG all
 
 COPY thirdparty-requirements.txt thirdparty-requirements.txt
 RUN apk --no-cache add --virtual .build-deps --update \
@@ -25,4 +26,5 @@ RUN apk --no-cache add --virtual .build-deps --update \
     apk del .build-deps
 
 COPY testcases.yaml /usr/lib/python2.7/site-packages/xtesting/ci/testcases.yaml
-CMD ["run_tests", "-t", "all"]
+COPY cmd.sh /
+CMD ["/cmd.sh"]
