@@ -91,3 +91,27 @@ tiers:
                             - '/share/config/integration_robot_properties.py'
                             - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
+            -
+                case_name: healthdist
+                project_name: functest
+                criteria: 100
+                blocking: false
+                description: >-
+                    This test case verifies that the vFW model is properly
+                    distributed. At the end the csar file shall be downloaded
+                    from the sdc
+                dependencies:
+                    installer: ''
+                    scenario: ''
+                run:
+                    module: 'xtesting.core.robotframework'
+                    class: 'RobotFramework'
+                    args:
+                        suites:
+                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                        include:
+                            - healthdist
+                        variablefile:
+                            - '/share/config/integration_robot_properties.py'
+                            - '/share/config/integration_vm_properties.py'
+- '/share/config/integration_preload_parameters.py'
