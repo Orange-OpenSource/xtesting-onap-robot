@@ -112,6 +112,6 @@ tiers:
                             - healthdist
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
-                            - '/share/config/integration_vm_properties.py'
+                            - '/share/config/vm_properties.py'
                             - '/share/config/integration_preload_parameters.py'
 
