@@ -104,8 +104,7 @@ tiers:
                     installer: ''
                     scenario: ''
                 run:
-                    module: 'xtesting.core.robotframework'
-                    class: 'RobotFramework'
+                    name: 'robotframework'
                     args:
                         suites:
                             - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
@@ -114,4 +113,5 @@ tiers:
                         variablefile:
                             - '/share/config/integration_robot_properties.py'
                             - '/share/config/integration_vm_properties.py'
-- '/share/config/integration_preload_parameters.py'
+                            - '/share/config/integration_preload_parameters.py'
+
