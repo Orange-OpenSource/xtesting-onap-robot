@@ -100,9 +100,6 @@ tiers:
                     This test case verifies that the vFW model is properly
                     distributed. At the end the csar file shall be downloaded
                     from the sdc
-                dependencies:
-                    installer: ''
-                    scenario: ''
                 run:
                     name: 'robotframework'
                     args:
