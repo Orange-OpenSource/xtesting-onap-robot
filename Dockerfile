@@ -15,6 +15,7 @@ RUN apk --no-cache add --virtual .build-deps --update \
     git clone --depth 1 https://git.onap.org/testsuite -b $ONAP_TAG /var/opt/OpenECOMP_ETE && \
     git clone --depth 1 https://git.onap.org/testsuite/properties -b $ONAP_TAG /share/config && \
     git clone --depth 1 https://git.onap.org/testsuite/python-testing-utils -b $ONAP_TAG /src/testing-utils && \
+    git clone --depth 1 https://git.onap.org/demo -b $ONAP_TAG /src/demo && \
     pip install \
         -chttps://git.openstack.org/cgit/openstack/requirements/plain/upper-constraints.txt?h=$OPENSTACK_TAG \
         pip==$PIP_TAG && \
@@ -22,8 +23,10 @@ RUN apk --no-cache add --virtual .build-deps --update \
         -chttps://git.opnfv.org/functest/plain/upper-constraints.txt?h=$OPNFV_TAG \
         -rthirdparty-requirements.txt \
         -e /src/testing-utils && \
+    mkdir -p /var/opt/OpenECOMP_ETE/demo/heat && cp -Rf /src/demo/heat/vFW /var/opt/OpenECOMP_ETE/demo/heat/ && \
     rm -r thirdparty-requirements.txt /src/testing-utils/.git /share/config/.git \
-        /var/opt/OpenECOMP_ETE/.git && \
+        /var/opt/OpenECOMP_ETE/.git /src/demo && \
+    cd / && ln -s /var/opt/OpenECOMP_ETE/robot/ /robot && \
     apk del .build-deps
 
 COPY testcases.yaml /usr/lib/python2.7/site-packages/xtesting/ci/testcases.yaml
