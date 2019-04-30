@@ -22,7 +22,7 @@ RUN apk --no-cache add --virtual .build-deps --update \
     pip install \
         -chttps://git.opnfv.org/functest/plain/upper-constraints.txt?h=$OPNFV_TAG \
         -rthirdparty-requirements.txt \
-        -e /src/testing-utils && \
+        -e /src/testing-utils/robotframework-onap && \
     mkdir -p /var/opt/OpenECOMP_ETE/demo/heat && cp -Rf /src/demo/heat/vFW /var/opt/OpenECOMP_ETE/demo/heat/ && \
     rm -r thirdparty-requirements.txt /src/testing-utils/.git /share/config/.git \
         /var/opt/OpenECOMP_ETE/.git /src/demo && \
