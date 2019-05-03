@@ -5,7 +5,7 @@ ARG OPNFV_TAG=master
 ARG ONAP_TAG=master
 ARG PIP_TAG=18.0
 
-ENV PYTHONPATH $PYTHONPATH:/src/testing-utils/eteutils
+ENV PYTHONPATH $PYTHONPATH:/src/testing-utils/robotframework-onap/eteutils
 ENV TAG all
 
 COPY thirdparty-requirements.txt thirdparty-requirements.txt
