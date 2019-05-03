@@ -1,5 +1,5 @@
 selenium<=3.0.0
-requests==2.11.1
+requests>=2.20.0
 robotframework-selenium2library==1.8.0
 robotframework-databaselibrary==0.8.1
 robotframework-extendedselenium2library==0.9.1
@@ -12,6 +12,6 @@ deepdiff==2.5.1
 dnspython==1.15.0
 robotframework-httplibrary==0.4.2
 robotframework-archivelibrary==0.3.2
-PyYAML==3.12
+pyyaml>=4.2b1
 json5==0.7.0
 robotframework-kafkalibrary==0.0.2
