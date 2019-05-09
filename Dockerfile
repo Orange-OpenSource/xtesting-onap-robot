@@ -1,4 +1,4 @@
-FROM opnfv/xtesting
+FROM opnfv/xtesting:gambia
 
 ARG OPENSTACK_TAG=stable/pike
 ARG OPNFV_TAG=master
