@@ -1,4 +1,4 @@
-FROM opnfv/xtesting
+FROM opnfv/xtesting:iruya
 
 ARG OPENSTACK_TAG=master
 ARG OPNFV_TAG=master
