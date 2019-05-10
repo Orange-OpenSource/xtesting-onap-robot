@@ -13,7 +13,6 @@ RUN apk --no-cache add --virtual .build-deps --update \
         python-dev build-base linux-headers libffi-dev \
         openssl-dev libjpeg-turbo-dev && \
     git clone --depth 1 https://git.onap.org/testsuite -b $ONAP_TAG /var/opt/OpenECOMP_ETE && \
-    git clone --depth 1 https://git.onap.org/testsuite/properties -b $ONAP_TAG /share/config && \
     git clone --depth 1 https://git.onap.org/testsuite/python-testing-utils -b $ONAP_TAG /src/testing-utils && \
     git clone --depth 1 https://git.onap.org/demo -b $ONAP_TAG /src/demo && \
     pip install \
