@@ -23,8 +23,7 @@ RUN apk --no-cache add --virtual .build-deps --update \
         -rthirdparty-requirements.txt \
         -e /src/testing-utils/robotframework-onap && \
     mkdir -p /var/opt/OpenECOMP_ETE/demo/heat && cp -Rf /src/demo/heat/vFW /var/opt/OpenECOMP_ETE/demo/heat/ && \
-    rm -r thirdparty-requirements.txt /src/testing-utils/.git /share/config/.git \
-        /var/opt/OpenECOMP_ETE/.git /src/demo && \
+    rm -r thirdparty-requirements.txt /src/testing-utils/.git /var/opt/OpenECOMP_ETE/.git /src/demo && \
     cd / && ln -s /var/opt/OpenECOMP_ETE/robot/ /robot && \
     apk del .build-deps
 
