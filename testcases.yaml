@@ -19,7 +19,7 @@ tiers:
                     name: 'robotframework'
                     args:
                         suites:
-                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                            - /var/opt/ONAP/robot/testsuites/health-check.robot
                         include:
                             - core
                         variablefile:
@@ -40,7 +40,7 @@ tiers:
                     name: 'robotframework'
                     args:
                         suites:
-                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                            - /var/opt/ONAP/robot/testsuites/health-check.robot
                         include:
                             - core
                             - small
@@ -63,7 +63,7 @@ tiers:
                     name: 'robotframework'
                     args:
                         suites:
-                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                            - /var/opt/ONAP/robot/testsuites/health-check.robot
                         include:
                             - core
                             - small
@@ -84,7 +84,7 @@ tiers:
                     name: 'robotframework'
                     args:
                         suites:
-                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                            - /var/opt/ONAP/robot/testsuites/health-check.robot
                         include:
                             - health
                         variablefile:
@@ -104,7 +104,7 @@ tiers:
                     name: 'robotframework'
                     args:
                         suites:
-                            - /var/opt/OpenECOMP_ETE/robot/testsuites/health-check.robot
+                            - /var/opt/ONAP/robot/testsuites/health-check.robot
                         include:
                             - healthdist
                         variablefile:
