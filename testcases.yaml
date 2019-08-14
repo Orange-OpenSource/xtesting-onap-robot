@@ -23,8 +23,7 @@ tiers:
                         include:
                             - core
                         variablefile:
-                            - '/share/config/integration_robot_properties.py'
-                            - '/share/config/vm_properties.py'
+                            - '/share/config/robot_properties.py'
                             - '/share/config/integration_preload_parameters.py'
 
             -
@@ -45,8 +44,7 @@ tiers:
                             - core
                             - small
                         variablefile:
-                            - '/share/config/integration_robot_properties.py'
-                            - '/share/config/vm_properties.py'
+                            - '/share/config/robot_properties.py'
                             - '/share/config/integration_preload_parameters.py'
 
             -
@@ -69,8 +67,7 @@ tiers:
                             - small
                             - medium
                         variablefile:
-                            - '/share/config/integration_robot_properties.py'
-                            - '/share/config/vm_properties.py'
+                            - '/share/config/robot_properties.py'
                             - '/share/config/integration_preload_parameters.py'
             -
                 case_name: full
@@ -88,8 +85,7 @@ tiers:
                         include:
                             - health
                         variablefile:
-                            - '/share/config/integration_robot_properties.py'
-                            - '/share/config/vm_properties.py'
+                            - '/share/config/robot_properties.py'
                             - '/share/config/integration_preload_parameters.py'
             -
                 case_name: healthdist
@@ -108,6 +104,5 @@ tiers:
                         include:
                             - healthdist
                         variablefile:
-                            - '/share/config/integration_robot_properties.py'
-                            - '/share/config/vm_properties.py'
+                            - '/share/config/robot_properties.py'
                             - '/share/config/integration_preload_parameters.py'
